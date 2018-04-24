@@ -1,5 +1,5 @@
 FROM ubuntu
-RUN apt-get update && apt-get install -y wget libssl1.0.0 cmake g++ gdb && \
+RUN apt-get update && apt-get install -y wget libssl1.0.0 cmake g++ gdb git && \
     mkdir cass-deps && \
     mkdir scylla-src && \
     cd cass-deps && \
