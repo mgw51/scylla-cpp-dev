@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y wget libssl1.0.0 cmake g++ gdb && \
     dpkg -i cassandra-cpp-driver-dev_2.7.1-1_amd64.deb && \
     cd ../ && \
     rm -rf cass-deps && \
-    apt-get autoremove \
+    apt-get autoremove && \
     rm -rf /var/lib/apt/lists/*
 WORKDIR scylla-src
 ENTRYPOINT ["/bin/sh", "-c"]
