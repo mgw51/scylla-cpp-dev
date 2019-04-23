@@ -16,4 +16,4 @@ RUN apt-get update && apt-get install -y wget libssl1.0.0 cmake g++ gdb && \
     apt-get autoremove && \
     rm -rf /var/lib/apt/lists/*
 WORKDIR scylla-src
-ENTRYPOINT ["/bin/sh", "-c"]
+ENTRYPOINT ["/bin/bash", "-c"]
